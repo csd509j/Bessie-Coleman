@@ -6,9 +6,9 @@
  */
 require WP_CONTENT_DIR . '/plugins/plugin-update-checker-master/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/AbideWebDesign/Hoover-Elementary-School',
+	'https://github.com/csd509j/Hoover',
 	__FILE__,
-	'Hoover-Elementary-School'
+	'Hoover'
 );
 
 $myUpdateChecker->setBranch('master'); 
