@@ -131,6 +131,9 @@ h2 {
   .post-type-archive-news .bg-primary .text-white, .page-template-page-calendar .bg-primary .text-white {
     color: white !important; }
 
+.news-header .bg-primary {
+  background-color: #000 !important; }
+
 #footer-top a {
   color: #C52032; }
 
