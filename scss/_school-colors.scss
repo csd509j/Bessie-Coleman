@@ -73,7 +73,7 @@ $carousel-title-background:			$brand-secondary;
 a {
 	color: $link-color;
 }
-a:hover, a:focus {
+a:hover, a:focus, a:hover:not(.stretched-link, .btn, .gform_button, .btn-quick) {
 	color: darken($link-color, 6%);
 }
 h1 a, h2 a, h3 a, h4 a, h5 a {
@@ -133,6 +133,25 @@ h2 {
 //== Header
 //
 //##
+#search-bar {
+	background-color: darken($brand-primary, 10%);
+	
+	p, .fa {
+		color: white;
+	}
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: white !important;
+	  opacity: 1; /* Firefox */
+	}
+	
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  color: white !important;
+	}
+	
+	::-ms-input-placeholder { /* Microsoft Edge */
+	  color: white !important;
+	}
+}
 #header-top-global {
 	background: $header-top-global-bg;
 	color: $header-top-global-color;
@@ -143,6 +162,10 @@ h2 {
 #header-global {
 	background-color: $header-global-bg;
 	color: $header-global-color;
+	
+	#logo {
+		max-width: 350px;
+	}
 }
 #header-top-global a {
 	color: $header-top-global-color;
@@ -217,7 +240,7 @@ h2 {
 //##
 #sidebar-first {
 	h2, h4 {
-    	background: #000;
+    	background: $brand-secondary;
     }
     h2 {
 	    a {
